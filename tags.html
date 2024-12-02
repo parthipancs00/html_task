@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostly Used HTML Tags</title>
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1 {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        h4 {
+            color: #2980b9;
+            font-size: 1.3em;
+            margin: 10px 0;
+        }
+
+        .tag-description {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+
+        /* Layout */
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        .example {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin-top: 10px;
+        }
+
+        .example code {
+            font-size: 1.1em;
+        }
+
+        /* Links */
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button */
+        button {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3498db;
+        }
+
+        /* Form Styling */
+        input[type="text"], input[type="email"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ecf0f1;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Common HTML Tags</h1>
+
+    <div class="container">
+
+        <!-- Anchor Tag -->
+        <section>
+            <h4>&lt;a&gt; Tag</h4>
+            <p class="tag-description">Defines a hyperlink to another page or resource.</p>
+            <div class="example"><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></div>
+            <a href="https://www.example.com">Visit Example</a>
+        </section>
+
+        <!-- Header Tag -->
+        <section>
+            <h4>&lt;header&gt; Tag</h4>
+            <p class="tag-description">Represents the header of a document or section, typically containing navigation links or introductory content.</p>
+            <div class="example"><code>&lt;header&gt;&lt;h1&gt;Welcome to My Website&lt;/h1&gt;&lt;/header&gt;</code></div>
+            <header>
+                <h1>Welcome to My Website</h1>
+            </header>
+        </section>
+
+        <!-- Navigation Tag -->
+        <section>
+            <h4>&lt;nav&gt; Tag</h4>
+            <p class="tag-description">Defines a set of navigation links.</p>
+            <div class="example"><code>&lt;nav&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/nav&gt;</code></div>
+            <nav>
+                <a href="#home">Home</a> | 
+                <a href="#about">About</a> | 
+                <a href="#contact">Contact</a>
+            </nav>
+        </section>
+
+        <!-- Main Tag -->
+        <section>
+            <h4>&lt;main&gt; Tag</h4>
+            <p class="tag-description">Specifies the main content of a document, unique to that document.</p>
+            <div class="example"><code>&lt;main&gt;Main content here&lt;/main&gt;</code></div>
+            <main>
+                <h2>Main Content Area</h2>
+                <p>This is the main content of the page.</p>
+            </main>
+        </section>
+
+        <!-- Article Tag -->
+        <section>
+            <h4>&lt;article&gt; Tag</h4>
+            <p class="tag-description">Represents independent, self-contained content.</p>
+            <div class="example"><code>&lt;article&gt;&lt;h2&gt;Article Title&lt;/h2&gt;&lt;/article&gt;</code></div>
+            <article>
+                <h2>Article Title</h2>
+                <p>This is an article content.</p>
+            </article>
+        </section>
+
+        <!-- Table Tag -->
+        <section>
+            <h4>&lt;table&gt; Tag</h4>
+            <p class="tag-description">Defines a table for displaying tabular data.</p>
+            <div class="example"><code>&lt;table&gt;&lt;tr&gt;&lt;th&gt;Header&lt;/th&gt;&lt;/tr&gt;&lt;/table&gt;</code></div>
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>28</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- List Tags -->
+        <section>
+            <h4>&lt;ul&gt; Tag (Unordered List)</h4>
+            <p class="tag-description">Defines an unordered list.</p>
+            <div class="example"><code>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;/ul&gt;</code></div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+
+            <h4>&lt;ol&gt; Tag (Ordered List)</h4>
+            <p class="tag-description">Defines an ordered list.</p>
+            <div class="example"><code>&lt;ol&gt;&lt;li&gt;First&lt;/li&gt;&lt;/ol&gt;</code></div>
+            <ol>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+            </ol>
+        </section>
+
+        <!-- Image Tag -->
+        <section>
+            <h4>&lt;img&gt; Tag</h4>
+            <p class="tag-description">Defines an image.</p>
+            <div class="example"><code>&lt;img src="image.jpg" alt="Description"&gt;</code></div>
+            <img src="image/parthi.jpg" alt="Placeholder Image" width="150px" height="150px">
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Created with &hearts; by Parthipan | <a href="mailto:parthipan.cse27@gmailcom">Contact</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
